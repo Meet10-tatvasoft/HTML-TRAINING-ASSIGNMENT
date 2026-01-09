@@ -1,13 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/innerpage.css">
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-light bg-white px-3 shadow-sm fixed-top col-md-12 ">
+        <div class="d-flex align-items-center gap-3">
+
+            <button class="btn p-0 d-lg-none d-block" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <img src="images/menu-bar.svg" width="30">
+            </button>
+
+            <img src="images/logo.svg" width="130">
+
+            <input type="text" class="form-control search-input ms-3 d-none d-sm-block" placeholder="Search">
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <img src="images/notification-icon.svg" width="22">
+            <img src="images/profile.png" width="36" class="rounded-circle">
+            <img src="images/downward-arrow.svg" width="18">
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group list-group-flush ">
+
+                <a class="list-group-item d-flex align-items-center gap-2 " href="dashboard.html">
+                    <img src="images/dashboard-default.svg" class="icon">Dashboard
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2" style="background-color: #FFF3F4; color: #C8242F;">
+                    <img src="images/graph-active.svg" class="icon">Analysis
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2">
+                    <img src="images/inbox-default.svg" class="icon">Inbox
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2">
+                    <img src="images/user-default.svg" class="icon">Users
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2">
+                    <img src="images/clock-default.svg" class="icon">History
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2">
+                    <img src="images/maintenance-default.svg" class="icon">Maintenance
+                </a>
+
+                <a class="list-group-item d-flex align-items-center gap-2">
+                    <img src="images/setting-default.svg" class="icon">Settings
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " style="margin-top: 80px;">
+        <div class="row">
+            <aside class="col-md-2 d-none d-lg-block sidebar p-3 " style="margin-top: -25px;">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="dashboard.html">
+                        <img src="images/dashboard-default.svg" class="icon">Dashboard
+                    </a>
+                    <a class="list-group-item d-flex align-items-center gap-2" style="background-color: #FFF3F4; color: #C8242F;">
+                        <img src="images/graph-active.svg" class="icon">Analysis
+                    </a>
+                    <a class="list-group-item d-flex align-items-center gap-2">
+                        <img src="images/inbox-default.svg" class="icon">Inbox
+                    </a>
+                    <a class="list-group-item d-flex align-items-center gap-2">
+                        <img src="images/user-default.svg" class="icon">Users
+                    </a>
+                    <a class="list-group-item d-flex align-items-center gap-2">
+                        <img src="images/clock-default.svg" class="icon">History
+                    </a>
+
+                    <a class="list-group-item d-flex align-items-center gap-2">
+                        <img src="images/maintenance-default.svg" class="icon">Maintenance
+                    </a>
+
+                    <a class="list-group-item d-flex align-items-center gap-2">
+                        <img src="images/setting-default.svg" class="icon">Settings
+                    </a>
+                </div>
+            </aside>
+            <main class="col-lg-10 col-12 p-4 ms-md-auto">
+                <h3 class="mb-4">Analysis</h3>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
+                        One Column
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 w-100 fw-bold fs-5">
+                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                        <div class="dropdown mb-3">
+                            <button
+                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Dropdown</span>
+                                <img src="images/downward-arrow.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <textarea name="" id="" class="form-control mb-4" placeholder="Multiple Line"></textarea>
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
+                        Two Column
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-sm-6 mx-0 fw-bold fs-5">
+                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                    </div>
+                    <div class="col-sm-6 mx-0 fw-bold fs-5">
+                        <input class="form-control mb-3" type="text" placeholder="Username" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-sm-6 mx-0 fw-bold fs-5">
+                        <input class="form-control mb-3" type="password" placeholder="Password" aria-label="default input example">
+                    </div>
+                    <div class="col-sm-6 mx-0 fw-bold fs-5">
+                        <div class="dropdown mb-3">
+                            <button
+                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Dropdown</span>
+                                <img src="images/downward-arrow.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
+                        Three Column
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-4 col-sm-6 mx-0">
+                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mx-0">
+                        <input class="form-control mb-3" type="password" placeholder="Password" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mx-0 mb-4">
+                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example" value="johndoe" disabled>
+                    </div>
+                </div>
+
+
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
+                        Four Column
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <input class="form-control mb-3" type="text" placeholder="Designation" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <input class="form-control mb-3" type="text" placeholder="Username" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-4 col-sm-6">
+                        <div class="dropdown mb-3">
+                            <button
+                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Dropdown</span>
+                                <img src="images/downward-arrow.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
+                        Other Design Elements
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        File Upload
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="mb-4">
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        Radio Button 
+                    </div>
+                </div>
+
+                <div class="row bg-white">
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
+                        <input class="mx-1 form-check-input" type="radio" id="exampleRadio1" name="radio_button" value="option1" >
+                        <label class="mx-0 form-check-label" for="exampleRadio1">Option 1</label>
+                    </div>
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
+                        <input class="mx-1 form-check-input" type="radio" id="exampleRadio2" name="radio_button" value="option2">
+                        <label class="form-check-label" for="exampleRadio2">Option 2</label>
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        Check Box
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
+                        <input class="form-check-input mx-1" id="inlineCheckbox1" type="checkbox" value="option1">
+                        <label class="form-check-label mx-0" for="inlineCheckbox1">Option 1</label>
+                    </div>
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
+                        <input class="form-check-input mx-1" id="inlineCheckbox2" type="checkbox" value="option2">
+                        <label class="form-check-label mx-0" for="inlineCheckbox2">Option 2</label>
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        Snackbar
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-6">
+                        
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        Call to action
+                    </div>
+                </div>
+                <div class="row bg-white d-flex justify-content-center align-items-center">
+                    <div class="col d-flex justify-content-start">
+                        <button class="btn btn-danger text-white border-danger fw-bold rounded-5 mx-3 mb-4">Primary</button>
+                        <buttom class="btn btn-white text-danger border-danger rounded-5 fw-bold mb-4 mx-3">Secondary</buttom>
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
+                        Tabs
+                    </div>
+                </div>
+                <div class="row bg-white">
+                    <div class="col-lg-12 mx-0">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tab 1</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Tab 2</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Tab 3</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sit perferendis illum expedita quisquam sapiente corrupti. Obcaecati excepturi esse cupiditate, doloremque quia numquam cumque fugiat natus adipisci dolorem, odio labore. Ullam nam pariatur quidem.</div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum autem aliquid sequi necessitatibus totam temporibus repudiandae modi atque exercitationem maxime nisi ea, eveniet accusantium laboriosam corrupti quo dolor recusandae veniam sit sunt voluptatem labore?</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, vero laudantium? Est ea quisquam culpa odio asperiores delectus, explicabo maiores velit, impedit ullam similique incidunt reprehenderit, ab voluptatibus voluptate neque soluta obcaecati doloremque eligendi.</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
+
 </html>

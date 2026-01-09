@@ -1,0 +1,40 @@
+.icon{
+    width: 20px;
+}
+body {
+    background: #FAFAFA;
+}
+
+.sidebar {
+    background: #fff;
+}
+.form-check-input:checked[type=radio] {
+    accent-color: red;
+}
+
+form-check-input:checked {
+    background-color: #ff0000;
+    border-color: #ff0000; 
+}
+
+.nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #ff0000;
+    font-weight: 500;
+    background-color: white;
+    color: red;
+}
+.nav-tabs .nav-link:not(.active){
+    border: none;
+    color: black;
+}
+
+.form-check-input:checked {
+    background-color: #dc3545; 
+    border-color: #dc3545; 
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+    border-color: #dc3545;
+}
