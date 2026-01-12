@@ -20,13 +20,37 @@
 
             <img src="images/logo.svg" width="130">
 
-            <input type="text" class="form-control search-input ms-3 d-none d-sm-block" placeholder="Search">
+            <input type="text" class="form-control search-input ms-3 d-none d-md-block" placeholder="Search">
         </div>
 
-        <div class="d-flex align-items-center gap-3">
-            <img src="images/notification-icon.svg" width="22">
+        <div class="d-flex align-items-center gap-0">
+            <div class="dropdown mb-3">
+                <button
+                    class="btn btn-secondary form-control w-100 bg-white text-secondary d-flex mt-3 border-0"
+                    type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/notification-icon.svg" width="22">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            
             <img src="images/profile.png" width="36" class="rounded-circle">
-            <img src="images/downward-arrow.svg" width="18">
+            <span class="ms-2">John Doe</span>
+            <div class="dropdown mb-3 ms-1">
+                <button
+                    class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex mt-3 border-0"
+                    type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/downward-arrow.svg" width="18">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -42,27 +66,27 @@
                     <img src="images/dashboard-default.svg" class="icon">Dashboard
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2" style="background-color: #FFF3F4; color: #C8242F;">
+                <a class="list-group-item d-flex align-items-center gap-2" href="innerpage.html" style="background-color: #FFF3F4; color: #C8242F;">
                     <img src="images/graph-active.svg" class="icon">Analysis
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2">
+                <a class="list-group-item d-flex align-items-center gap-2" href="#"> 
                     <img src="images/inbox-default.svg" class="icon">Inbox
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2">
+                <a class="list-group-item d-flex align-items-center gap-2" href="#">
                     <img src="images/user-default.svg" class="icon">Users
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2">
+                <a class="list-group-item d-flex align-items-center gap-2" href="#">
                     <img src="images/clock-default.svg" class="icon">History
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2">
+                <a class="list-group-item d-flex align-items-center gap-2" href="#">
                     <img src="images/maintenance-default.svg" class="icon">Maintenance
                 </a>
 
-                <a class="list-group-item d-flex align-items-center gap-2">
+                <a class="list-group-item d-flex align-items-center gap-2" href="#">
                     <img src="images/setting-default.svg" class="icon">Settings
                 </a>
 
@@ -72,34 +96,34 @@
 
     <div class="container-fluid " style="margin-top: 80px;">
         <div class="row">
-            <aside class="col-md-2 d-none d-lg-block sidebar p-3 " style="margin-top: -25px;">
+            <aside class="col-md-2 d-none d-lg-block sidebar p-3 mt-1" style="margin-top: -25px;">
                 <div class="list-group list-group-flush">
                     <a class="list-group-item d-flex align-items-center gap-2" href="dashboard.html">
                         <img src="images/dashboard-default.svg" class="icon">Dashboard
                     </a>
-                    <a class="list-group-item d-flex align-items-center gap-2" style="background-color: #FFF3F4; color: #C8242F;">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="innerpage.html" style="background-color: #FFF3F4; color: #C8242F;">
                         <img src="images/graph-active.svg" class="icon">Analysis
                     </a>
-                    <a class="list-group-item d-flex align-items-center gap-2">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="#">
                         <img src="images/inbox-default.svg" class="icon">Inbox
                     </a>
-                    <a class="list-group-item d-flex align-items-center gap-2">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="#">
                         <img src="images/user-default.svg" class="icon">Users
                     </a>
-                    <a class="list-group-item d-flex align-items-center gap-2">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="#">
                         <img src="images/clock-default.svg" class="icon">History
                     </a>
 
-                    <a class="list-group-item d-flex align-items-center gap-2">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="#">
                         <img src="images/maintenance-default.svg" class="icon">Maintenance
                     </a>
 
-                    <a class="list-group-item d-flex align-items-center gap-2">
+                    <a class="list-group-item d-flex align-items-center gap-2" href="#">
                         <img src="images/setting-default.svg" class="icon">Settings
                     </a>
                 </div>
             </aside>
-            <main class="col-lg-10 col-12 p-4 ms-md-auto">
+            <main class="col-lg-10 col-12 p-4 ms-md-auto mt-3">
                 <h3 class="mb-4">Analysis</h3>
                 <div class="row bg-white">
                     <div class="col-lg-11 mx-0 fw-bold fs-5 mb-4">
@@ -107,13 +131,16 @@
                     </div>
                 </div>
                 <div class="row bg-white">
-                    <div class="col-lg-11 mx-0 w-100 fw-bold fs-5">
-                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                    <div class="col-lg-11 mx-0 w-100 ">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                            <label for="floatingInput">Name</label>
+                        </div>
                         <div class="dropdown mb-3">
                             <button
-                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Dropdown</span>
+                                class="btn btn-secondary form-control align-items-center justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="height: 58px;">
+                                <span style="margin-left: 9px;">Dropdown</span>
                                 <img src="images/downward-arrow.svg" alt="">
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -122,7 +149,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </div>
-                        <textarea name="" id="" class="form-control mb-4" placeholder="Multiple Line"></textarea>
+                        <div class="form-floating mb-4">
+                            <textarea type="text" class="form-control mb-3" placeholder="Multiple Line"></textarea>
+                            <label for="floatingInput">Multiple Line</label>
+                        </div>
                     </div>
                 </div>
                 <div class="row bg-white">
@@ -131,23 +161,32 @@
                     </div>
                 </div>
                 <div class="row bg-white">
-                    <div class="col-sm-6 mx-0 fw-bold fs-5">
-                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                    <div class="col-sm-6 mx-0">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                            <label for="floatingInput">Name</label>
+                        </div>
                     </div>
-                    <div class="col-sm-6 mx-0 fw-bold fs-5">
-                        <input class="form-control mb-3" type="text" placeholder="Username" aria-label="default input example">
+                    <div class="col-sm-6 mx-0">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Username">
+                            <label for="floatingInput">Username</label>
+                        </div>
                     </div>
                 </div>
                 <div class="row bg-white">
-                    <div class="col-sm-6 mx-0 fw-bold fs-5">
-                        <input class="form-control mb-3" type="password" placeholder="Password" aria-label="default input example">
+                    <div class="col-sm-6 mx-0">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control mb-3" placeholder="Password">
+                            <label for="floatingInput">Password</label>
+                        </div>
                     </div>
-                    <div class="col-sm-6 mx-0 fw-bold fs-5">
-                        <div class="dropdown mb-3">
+                    <div class="col-sm-6 mx-0">
+                        <div class="dropdown mb-3 ">
                             <button
-                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Dropdown</span>
+                                class="btn btn-secondary form-control align-items-center justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="height: 58px;">
+                                <span style="margin-left: 9px;">Dropdown</span>
                                 <img src="images/downward-arrow.svg" alt="">
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -165,13 +204,22 @@
                 </div>
                 <div class="row bg-white">
                     <div class="col-lg-4 col-sm-6 mx-0">
-                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                            <label for="floatingInput">name</label>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mx-0">
-                        <input class="form-control mb-3" type="password" placeholder="Password" aria-label="default input example">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control mb-3" placeholder="Password">
+                            <label for="floatingInput">Password</label>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mx-0 mb-4">
-                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example" value="johndoe" disabled>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3 text" placeholder="Disabled" value="johndoe" style="border-style: dashed;  background-color: white; color: #D9D9D9; border-color: #D9D9D9 ;" disabled>
+                            <label for="floatingInput" style="color: #D9D9D9;">Disabled</label>
+                        </div>
                     </div>
                 </div>
 
@@ -183,20 +231,29 @@
                 </div>
                 <div class="row bg-white">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <input class="form-control mb-3" type="text" placeholder="Designation" aria-label="default input example">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Designation">
+                            <label for="floatingInput">Designation</label>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <input class="form-control mb-3" type="text" placeholder="Name" aria-label="default input example">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                            <label for="floatingInput">Name</label>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <input class="form-control mb-3" type="text" placeholder="Username" aria-label="default input example">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control mb-3" placeholder="Username">
+                            <label for="floatingInput">Username</label>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mb-4 col-sm-6">
-                        <div class="dropdown mb-3">
+                        <div class="dropdown mb-3 ">
                             <button
-                                class="btn btn-secondary form-control justify-content-between w-100 bg-white text-secondary d-flex"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Dropdown</span>
+                                class="btn btn-secondary form-control align-items-center justify-content-between w-100 bg-white text-secondary d-flex"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="height: 58px;">
+                                <span style="margin-left: 9px;">Dropdown</span>
                                 <img src="images/downward-arrow.svg" alt="">
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -219,9 +276,12 @@
                     </div>
                 </div>
                 <div class="row bg-white">
-                    <div class="mb-4">
-                        <input class="form-control" type="file" id="formFile">
-                    </div>
+                    <div class="mb-4 d-flex justify-content-start align-items-center ">
+                        <label  class="btn btn-outline-danger rounded-5">
+                            <input class="form-control d-none" type="file" name="file" id="formFile" required>
+                            <img src="images/cloud-upload-icon.svg" alt="">Upload
+                        </label>
+                    </div>    
                 </div>
                 <div class="row bg-white">
                     <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
@@ -230,12 +290,12 @@
                 </div>
 
                 <div class="row bg-white">
-                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
-                        <input class="mx-1 form-check-input" type="radio" id="exampleRadio1" name="radio_button" value="option1" >
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4 custom_input">
+                        <input class="mx-1 me-2 form-check-input" type="radio" id="exampleRadio1" name="radio_button" value="option1" >
                         <label class="mx-0 form-check-label" for="exampleRadio1">Option 1</label>
                     </div>
                     <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
-                        <input class="mx-1 form-check-input" type="radio" id="exampleRadio2" name="radio_button" value="option2">
+                        <input class="mx-1 me-2 form-check-input" type="radio" id="exampleRadio2" name="radio_button" value="option2">
                         <label class="form-check-label" for="exampleRadio2">Option 2</label>
                     </div>
                 </div>
@@ -245,18 +305,53 @@
                     </div>
                 </div>
                 <div class="row bg-white">
-                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
-                        <input class="form-check-input mx-1" id="inlineCheckbox1" type="checkbox" value="option1">
+                    <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4 custom_input">
+                        <input class="me-2 form-check-input mx-1" id="inlineCheckbox1" type="checkbox" value="option1">
                         <label class="form-check-label mx-0" for="inlineCheckbox1">Option 1</label>
                     </div>
                     <div class="form-check col-lg-2 col-md-3 col-sm-4 col-5 d-flex justify-content-start mb-4">
-                        <input class="form-check-input mx-1" id="inlineCheckbox2" type="checkbox" value="option2">
+                        <input class="me-2 form-check-input mx-1" id="inlineCheckbox2" type="checkbox" value="option2">
                         <label class="form-check-label mx-0" for="inlineCheckbox2">Option 2</label>
                     </div>
                 </div>
                 <div class="row bg-white">
                     <div class="col-lg-11 mx-0 fw-bold fs-6 mb-4">
                         Snackbar
+                    </div>
+                </div>
+                <div class="row bg-white g-3">
+                    <div class="col-6">
+                        <div class="alert border border-danger d-flex align-items-center mb-0">
+                            <img src="images/error-icon.svg" alt="" class="icon me-2">
+                            <div class="text-danger">
+                                This is an error Message!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="alert border border-info d-flex align-items-center mb-0">
+                            <img src="images/info-icon.svg" alt="" class="icon me-2">
+                            <div class="text-info">
+                                This is an information Message!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="alert border border-warning d-flex align-items-center mb-4">
+                            <img src="images/warning-icon.svg" alt="" class="icon me-2">
+                            <div class="text-warning">
+                                This is an warning Message!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="alert border border-success d-flex align-items-center mb-4">
+                            <img src="images/success-icon.svg" alt="" class="icon me-2">
+                            <div class="text-success" role="alert">
+                                This is an success Message!
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row bg-white">
@@ -272,7 +367,7 @@
                 </div>
                 <div class="row bg-white d-flex justify-content-center align-items-center">
                     <div class="col d-flex justify-content-start">
-                        <button class="btn btn-danger text-white border-danger fw-bold rounded-5 mx-3 mb-4">Primary</button>
+                        <button class="btn btn-danger text-white border-danger fw-bold rounded-5 me-3 mb-4">Primary</button>
                         <buttom class="btn btn-white text-danger border-danger rounded-5 fw-bold mb-4 mx-3">Secondary</buttom>
                     </div>
                 </div>

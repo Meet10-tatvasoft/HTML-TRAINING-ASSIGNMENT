@@ -38,3 +38,23 @@ form-check-input:checked {
     box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
     border-color: #dc3545;
 }
+
+.custom_input{
+    margin-left: -15px;
+}
+
+.form-floating > label{
+    background: white;
+    padding: 0 0.5rem;
+    height: auto;
+    top: 15px;
+    left: 0.75rem;
+    transform-origin: 0 0;
+    font-size: 16px;
+}
+
+.form-floating > .form-control:focus ~ label, 
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: translateY(-100%) scale(0.85);
+    font-size: 16px;
+}

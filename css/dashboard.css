@@ -10,3 +10,34 @@ body {
     width: 20px;
 }
 
+.box1{
+    border-radius: 50%;
+    background-color: #C8242F;
+    width: 20px;
+    height: 20px;
+    color: #C8242F;
+}
+
+.box2{
+    border-radius: 50%;
+    background-color: #A2B86C;
+    width: 20px;
+    height: 20px;
+    color: #A2B86C;
+}
+
+.box3{
+    background-color: #F16C20; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #F16C20;
+}
+
+.box4{
+    border-radius: 50%;
+    background-color: #EBC844;
+    width: 20px;
+    height: 20px;
+    color: #EBC844;
+}
